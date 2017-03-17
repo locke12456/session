@@ -1,12 +1,11 @@
 #include <stdio.h>
-#include "SharedMemory.h"
 #include <Windows.h>
+#include "test_call.h"
 int main()
 {
-	SHM::SharedMemoriesManagent & that = SHM::SharedMemoriesManagent::GetInstace();
-
+	
 	for (int i = 0; i < 10000; i++) {
-		//test_call();
+		test_call();
 		//SHM::Session * stacks[1000] = {0};
 		//SHM::SessionList* list = new SHM::SessionList();
 		//	stacks[i] = new SHM::Session();
